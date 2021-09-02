@@ -7,7 +7,7 @@ checkButton.addEventListener("click",function clickHandler()
     // console.log("clicked");
     var sum = sumOfSquares(Number(sideLength[0].value),Number(sideLength[1].value));
     var lengthOfHypotenuse = Math.sqrt(sum);
-    showMessage(`the length of the hypotenuse is ${lengthOfHypotenuse}`);
+    showMessage(`the length of the hypotenuse is ${lengthOfHypotenuse} cm`);
 })
 function sumOfSquares(a,b)
 {

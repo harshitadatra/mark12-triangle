@@ -4,13 +4,14 @@
 	--primary-color: #5b21b6;
 	--background-color: #1f2937;
 	--text-color: #f9fafb;
-	margin: 0;
-	padding: 0;
+	
 	font-family: 'Montserrat', sans-serif;
 }
 body {
 	color: var(--text-color);
 	background: var(--background-color);
+    margin: 0;
+    
 }
 
 
@@ -26,17 +27,22 @@ h1
 
     
 }
-input {
-    margin-bottom: 3rem;
-    width: 80%;
 
-  
-    padding-bottom: 20px;
-    
-  }
-input, label{
+.input-container input {
+	padding: 0.5rem;
+	font-size: 1rem;
+	width: 50%;
+	margin: 0.5rem 1rem 1rem 0;
+
+}
+.input-container input{
     display: block;
-    margin-left: 5rem;
+    margin-left: 15rem;
+   
+}
+.input-container label{
+    display: block;
+    margin-left: 15rem;
 }
 #display-message
 
@@ -55,5 +61,49 @@ input, label{
     border-width: medium;
     padding: 0.5rem;
     border-radius: 0.3rem;
+    width: 10%;
   }
-  
+  .formula
+  {
+    
+    text-align: center;
+    border: 4px solid #FCA5A5;
+    width: 60%;
+    margin-bottom: 2rem;
+    margin-left: 13rem;
+    padding:1rem;
+    
+
+  }
+  nav{
+      background-color: #F87171;
+      padding:1rem;
+  }
+  a {
+	text-decoration: none;
+	color: var(--text-color);
+	padding: 0.5rem;
+	font-weight: 1000;
+	font-size: 1rem;
+}
+.question-container {
+	padding: 2rem;
+	border: 2px solid var(--primary-color);
+	border-radius: 0.5rem;
+	margin:auto;
+    margin-bottom: 1rem;
+    width: fit-content;
+}
+.question-container p {
+	margin-bottom: 1rem;
+}
+
+.question-container label {
+	margin-right: 0.5rem;
+}
+
+.item-active {
+	border-bottom: 2px solid;
+	font-weight: bold;
+}
+

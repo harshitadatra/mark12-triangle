@@ -8,16 +8,25 @@
     <title>Document</title>
 </head>
 <body>
+  <nav>
+    <a href="index.html" class="item-active">Is Triangle?</a>
+    <a href="quiz.html" >Quiz</a>
+    <a href="hypotenuse.html">Hypotenuse</a>
+    <a href="area.html">Area</a>
+  </nav>
+   <h1>Is Triangle ?</h1>
+   <div class="input-container container">
 
-    
-    <div class="content">
-        <a class = "pills" href="/istriangle.html">Fun with angles</a>
-        <a class = "pills" href="/hypotenuse.html">Check the Hypotenuse</a> 
-        <a class = "pills" href="/quiz.html">Wanna play a fun quiz</a>
-        <a class = "pills" href="/area.html">Calculate the Area</a>
-    </div>
-    <h1>Fun With Triangles</h1>
-    <div class="info">To know and play more with Triangles,Check out the following:</div>
- 
+   <label for=""> angle1 </label>
+   <input type="number" class="angle-input"></input>
+   <label for="angle2">angle2</label>
+   <input type="number" class="angle-input"></input>
+
+   <label for="angle3"> angle3</label>
+   <input type="number" class="angle-input"></input>
+  <button id="check-button"> tell me!</button>
+  </div>
+  <div id="display-message"></div>
 </body>
+<script src="isTrianlge.js"></script>
 </html>

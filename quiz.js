@@ -1,15 +1,16 @@
 const formInput =document.querySelector(".quiz-form");
 const message =document.querySelector("#display-message");
 const checkButton = document.querySelector("#check-button")
-const correctAnswers =["45","right angle"];
+const correctAnswers =["90","rightAngled"];
  checkButton.addEventListener("click", function clickHandler()
  {
     calculateScore();
 
 
  });
- function calculateScore()
+ function calculateScore(e)
  {
+     
      var formResults = new FormData(formInput);
      var score=0;
      var index=0;

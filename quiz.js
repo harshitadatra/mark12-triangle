@@ -19,8 +19,9 @@ const correctAnswers =["90","rightAngled"];
          if(values == correctAnswers[index])
          {
              score= score+1;
-             index=index+1;
          }
+         index=index+1;
+
      }
     showMessage (`the score is ${score}`);
 

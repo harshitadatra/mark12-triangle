@@ -9,6 +9,11 @@ checkButton.addEventListener("click",function clickHandler()
 })
 function isTriangle()
 {
+    if(Number(input[0].value)<=0||Number(input[1].value)<=0||Number(input[2].value)<=0)
+    {
+        displayMessage("angles cannot be negative or zero");
+    }
+    else{
     var sum = sumOfTriangles(Number(input[0].value),Number(input[1].value),Number(input[2].value))
     if(sum == 180)
     {
@@ -16,8 +21,9 @@ function isTriangle()
     }
     else
     {
-        displayMessage("ooo no it is not a triangle");
+        displayMessage("oo no it is not a triangle");
     }
+}
 
 }
 

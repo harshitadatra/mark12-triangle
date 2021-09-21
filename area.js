@@ -7,8 +7,15 @@ checkButton.addEventListener("click",function clickHandle()
     // console.log("clicked");
     var base = baseLength.value;
     var height =heightLength.value;
+    if(base<=0||height<=0)
+    {
+        displayMessage(`length cannot be negative or zero`);
+    }
+    else
+    {
     var area = calculateArea(base,height);
     displayMessage(`The area of the triangle is ${area}`);
+    }
 
 } );
 function calculateArea( base,height)
